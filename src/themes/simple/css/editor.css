@@ -1,0 +1,52 @@
+.title-sub{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #494c52;
+}
+
+.mr-b-40{
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.small{}
+
+.title-sub{
+    font-size: 25px;
+}
+
+.medium{}
+
+.pullquote{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.pullquote-author{
+    font-size: .8em;
+}
+.orange{
+    color: #fc4513!important;
+}
+.btn-orange{
+    background-color: #fc4513;
+    color: #ffffff !important;
+    padding: 6px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 8px 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid transparent;
+}
+blockquote p{
+    font-size: 25px!important;
+    color: #494c52;
+}

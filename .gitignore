@@ -1,0 +1,5 @@
+src/themes/simple/images/*
+src/themes/simple/minify/*
+src/themes/simple/lib/*
+src/mysite/_config.php
+src/mysite/db.sql

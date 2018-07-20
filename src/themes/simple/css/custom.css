@@ -1,0 +1,216 @@
+
+/*===========================================*/
+/*	DESKTOP LAYOUT
+/*===========================================*/
+
+.orange, .intro-text p.orange {
+	color: #fc4513!important;
+}
+
+.padding-b-60 {
+	padding-bottom: 60px;
+}
+
+.better-text p {
+	font-size: 18px;
+	line-height: 1.8em;
+	margin-bottom: 1.5em;
+}
+
+.better-text ul li {
+	margin-left: 1.25em;
+	font-size: 18px;
+}
+
+.intro-text p, .intro-text ol {
+	font-size: 24px;
+	line-height: 1.5em;
+	font-weight: 300;
+	margin-bottom: 1.3em;
+	color: #494c52;
+}
+
+.content a {
+	color: #fc4513;
+}
+
+ol li {
+	margin-left: 1em;
+}
+
+.btn-orange {
+	background-color: #fc4513;
+	color: #ffffff !important;
+}
+.btn-orange:hover, .btn-orange:active {
+	background-color: rgba(252,69,19,.75);
+}
+
+.pullquote {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.pullquote-author {
+	font-size: .8em;
+}
+
+.form-section-1 .form-control {
+		width: 100%;
+}
+
+.info-box7 .img-responsive {
+	display: inline-block;
+}
+
+.filter-style1 .filter-list>.active {
+	border-color: #fc4513;
+	color: #494c52;
+}
+
+.btn-default.disabled, .btn-default[disabled], .btn-default {
+	border-color: #fc4513;
+	color: #fc4513;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+	border-color: #fc4513;
+	background-color: #fc4513;
+	color: #ffffff;
+}
+
+.info-box5 .img {
+	color: #ffffff;
+}
+.info-box5 .info .hd {
+	margin-top: 10px;
+	display: inline-block;
+}
+.contact-section-2 .info-box {
+	margin-bottom: 10px;
+}
+.contact-section {
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
+
+.footer-logo {
+	width: 160px;
+}
+
+
+/* **********          ********** */
+.dark.nav-wrp {
+	z-index: 9999;
+}
+
+.client-section-2 .client-logos img {
+	opacity: 1;
+}
+
+.checkbox input[type="checkbox"]{
+    margin-left: 0;
+}
+.mr-b-40 p{
+    margin-bottom: 40px;
+}
+/*
+.content-section-11 .title-sub p{
+    font-weight: 400;
+    color: #494c52;
+}
+.content h2, .intro-text p{
+    font-weight: 400;
+}
+*/
+.content h2, .content h3, .content h4{
+    color: #1f2229;
+    margin-bottom: 20px;
+}
+.content a h3{
+    color: #ffffff;
+}
+blockquote{
+    margin-left: 2em;
+    margin-right: 2em;
+    border-left: none;
+    font-weight: 300;
+}
+blockquote p{
+    font-size: 25px!important;
+    color: #494c52;
+}
+blockquote p span{
+    font-size: .8em !important;
+}
+.btn-orange a{
+    color: #FFFFFF!important;
+}
+.filter-list a{
+    cursor: pointer;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/*===========================================*/
+/*	MOBILE & TABLET COMMON
+/*===========================================*/
+@media (min-width: 200px) and (max-width: 991px) {
+
+}
+
+
+/*===========================================*/
+/*	TABLET
+/*===========================================*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/*===========================================*/
+/*	MOBILE
+/*===========================================*/
+@media (min-width: 200px) and (max-width: 767px) {
+
+}
+@media (min-width: 600px) and (max-width: 767px) {
+}
+@media (min-width: 480px) and (max-width: 599px) {
+
+}
+@media (min-width: 200px) and (max-width: 479px) {
+
+}
+
+a.readmore{
+	color: #0f0f0f;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	.people-listing{
+		text-align: center;
+	}
+
+	.people-listing img.img-responsive{
+		display: inline;
+	}
+
+	.people-listing .readmore{
+		display: block;
+	}
+}
