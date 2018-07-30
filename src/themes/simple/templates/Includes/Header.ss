@@ -61,7 +61,7 @@
                         <!-- info-box -->
                         <a href="$EventsLinkedPage.Link">
                         <div class="info-box info-box7">
-                            <div class="img"><i class="icon-calendar"></i></div>
+                            <div class="img"><i class="icon-beaker"></i></div>
                             <div class="info">
                                 <h2 class="hd">$TopEventTitle</h2>
                                 <p class="sub-txt">$TopEventDescription</p>
@@ -77,7 +77,7 @@
                         <!-- info-box -->
                         <a href="$LabsLinkedPage.Link">
                         <div class="info-box info-box7">
-                            <div class="img"><i class="icon-beaker"></i></div>
+                            <div class="img"><i class="icon-briefcase"></i></div>
                             <div class="info">
                                 <h2 class="hd">$TopLabTitle</h2>
                                 <p class="sub-txt">$TopLabDescription</p>
@@ -93,7 +93,7 @@
                         <!-- info-box -->
                         <a href="$WorkLinkedPage.Link">
                         <div class="info-box info-box7">
-                            <div class="img"><i class="icon-briefcase"></i></div>
+                            <div class="img"><i class="icon-lightbulb"></i></div>
                             <div class="info">
                                 <h2 class="hd">$TopWorkTitle</h2>
 
