@@ -1,6 +1,7 @@
 <section class="content-section align-c content-section-9">
     <div class="container">
         <h2 class="title">$ListSubPageTitle</h2>
+        $Description
         <hr class="mr-b-40">
         <div class="row eqh gt40 fs-equalize-element">
 

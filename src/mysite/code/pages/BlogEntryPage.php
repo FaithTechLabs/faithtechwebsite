@@ -14,6 +14,10 @@ class BlogEntryPage extends Page{
 
         return $fields;
     }
+
+    private function getBanner(){
+        $banner = $this->parent()->getField('Banner');
+    }
 }
 
 class BlogEntryPage_Controller extends Page_Controller{
