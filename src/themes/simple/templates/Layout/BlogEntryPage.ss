@@ -14,8 +14,42 @@
                 $Content
             </div>
             <hr class="mr-t-30 mr-b-30">
-            <a href="$PrevNextPage('prev').Link">Previous</a>
-            <a href="$PrevNextPage('next').Link">Next</a>
+            <div class="gt40">
+                <div class="col-md-2" style="height: 253px;">
+                    <% if $PrevNextPage('prev') %>
+                        <a href="$PrevNextPage('prev').Link">
+                            <div class="info-box info-box7">
+                                <img src="$PrevNextPage('prev').Thumbnail.URL" class="img-responsive" alt="Image">
+
+                                <div class="info">
+                                    <h2 class="hd">$PrevNextPage('prev').Title</h2>
+
+                                    <p class="sub-txt">$PrevNextPage('prev').SubTitle</p>
+                                </div>
+                            </div>
+                        </a>
+                    <% else %>
+
+                    <% end_if %>
+                </div>
+                <div class="col-md-2" style="height: 253px;">
+                    <% if $PrevNextPage('next') %>
+                        <a href="$PrevNextPage('next').Link">
+                            <div class="info-box info-box7">
+                                <img src="$PrevNextPage('next').Thumbnail.URL" class="img-responsive" alt="Image">
+
+                                <div class="info">
+                                    <h2 class="hd">$PrevNextPage('next').Title</h2>
+
+                                    <p class="sub-txt">$PrevNextPage('next').SubTitle</p>
+                                </div>
+                            </div>
+                        </a>
+                    <% else %>
+
+                    <% end_if %>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /container -->
