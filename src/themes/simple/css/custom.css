@@ -2,6 +2,9 @@
 /*===========================================*/
 /*	DESKTOP LAYOUT
 /*===========================================*/
+.align-j {
+	text-align: justify;
+}
 
 .orange, .intro-text p.orange {
 	color: #fc4513!important;
@@ -36,6 +39,10 @@
 
 ol li {
 	margin-left: 1em;
+}
+
+.main-text ul li {
+	margin-left: 1.25em;
 }
 
 .btn-orange {
