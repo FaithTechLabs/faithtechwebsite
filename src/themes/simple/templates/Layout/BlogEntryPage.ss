@@ -14,7 +14,8 @@
                 $Content
             </div>
             <hr class="mr-t-30 mr-b-30">
-            Click for the next video
+            <a href="$PrevNextPage('prev').Link">Previous</a>
+            <a href="$PrevNextPage('next').Link">Next</a>
         </div>
     </div>
     <!-- /container -->

@@ -15,11 +15,20 @@ class BlogEntryPage extends Page{
         return $fields;
     }
 
-    private function getBanner(){
-        $banner = $this->parent()->getField('Banner');
-    }
 }
 
 class BlogEntryPage_Controller extends Page_Controller{
+    public function PrevNextPage($Mode = 'next') {
 
+        if($Mode == 'next'){
+            return SiteTree::get()->filter(array("ParentID" => $this->ParentID, "Sort:GreaterThan" => $this->Sort))->sort("Sort ASC")->limit(1)->first();
+        }
+        elseif($Mode == 'prev'){
+            return SiteTree::get()->filter(array("ParentID" => $this->ParentID, "Sort:LessThan" => $this->Sort))->sort("Sort DESC")->limit(1)->first();
+        }
+        else{
+            return false;
+        }
+
+    }
 }
