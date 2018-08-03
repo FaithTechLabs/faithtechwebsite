@@ -14,7 +14,6 @@
                             <div class="info">
                                 <h2 class="hd">$Title</h2>
 
-                                <p class="sub-txt">$SubTitle</p>
                             </div>
                         </div>
                     </a>

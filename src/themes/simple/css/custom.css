@@ -155,15 +155,26 @@ blockquote p span{
     cursor: pointer;
 }
 
+.blog-thumbs {
+	object-fit: cover;
+	width: 100%;
+}
 
 
 
 
 @media (min-width: 1200px) {
 
+	.blog-thumbs {
+		height: 200px;
+	}
+
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+	.blog-thumbs {
+		height: 160px;
+	}
 
 }
 
