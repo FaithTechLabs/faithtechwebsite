@@ -1,6 +1,10 @@
 <?php
 class BlogEntryPage extends Page{
-    static $db = array();
+    static $db = array(
+        'Author' => 'Text',
+        'ShowKeepReading' => 'Boolean',
+        'Header' => 'HTMLText'
+    );
     static $has_one = array(
         'Thumbnail' => 'Image'
     );
@@ -9,10 +13,18 @@ class BlogEntryPage extends Page{
         $fields = parent::getCMSFields();
 
         $fields->addFieldsToTab('Root.Main', array(
-            UploadField::create('Thumbnail', 'Thumbnail Image')), 'Description');
+            UploadField::create('Thumbnail', 'Thumbnail Image'),
+            TextField::create('Author', 'Author Name')->setMaxLength(50)), 'Description');
+        $fields->replaceField('Description', HtmlEditorField::create('Header', 'Header text and/or media')->setRows(16));
 
         return $fields;
     }
+
+    public function getSettingsFields() {
+		$fields = parent::getSettingsFields();
+		$fields->addFieldToTab("Root.Settings", new CheckBoxField('ShowKeepReading', 'Show Keep Reading Section?'));
+		return $fields;
+	}
 
 }
 

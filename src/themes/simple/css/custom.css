@@ -87,6 +87,9 @@ ol li {
 .info-box5 .img {
 	color: #ffffff;
 }
+.img.social {
+	color: #000000;
+}
 .info-box5 .info .hd {
 	margin-top: 10px;
 	display: inline-block;
