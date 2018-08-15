@@ -26,12 +26,6 @@ class BlogEntryPage extends Page{
         return $fields;
     }
 
-    public function getSettingsFields() {
-		$fields = parent::getSettingsFields();
-//		$fields->addFieldToTab("Root.Settings", new CheckBoxField('ShowKeepReading', 'Show Keep Reading Section?'));
-		return $fields;
-	}
-
 }
 
 class BlogEntryPage_Controller extends Page_Controller{
