@@ -3,6 +3,7 @@ class BlogEntryPage extends Page{
     static $db = array(
         'Author' => 'Text',
         'ShowKeepReading' => 'Boolean',
+        'Active' => 'Boolean',
         'Header' => 'HTMLText'
     );
     static $has_one = array(
@@ -16,13 +17,18 @@ class BlogEntryPage extends Page{
             UploadField::create('Thumbnail', 'Thumbnail Image'),
             TextField::create('Author', 'Author Name')->setMaxLength(50)), 'Description');
         $fields->replaceField('Description', HtmlEditorField::create('Header', 'Header text and/or media')->setRows(16));
+        $showKeepReadingSection = FieldGroup::create('Keep Reading Section', array(CheckBoxField::create('ShowKeepReading', 'Show Keep Reading Section')));
+        $fields->addFieldsToTab('Root.Main', array($showKeepReadingSection));
+        $makePostActiveSection = FieldGroup::create('Activate Post', array(CheckBoxField::create('Active', 'Make Post Active')));
+        $fields->addFieldsToTab('Root.Main', array($makePostActiveSection));
+
 
         return $fields;
     }
 
     public function getSettingsFields() {
 		$fields = parent::getSettingsFields();
-		$fields->addFieldToTab("Root.Settings", new CheckBoxField('ShowKeepReading', 'Show Keep Reading Section?'));
+//		$fields->addFieldToTab("Root.Settings", new CheckBoxField('ShowKeepReading', 'Show Keep Reading Section?'));
 		return $fields;
 	}
 

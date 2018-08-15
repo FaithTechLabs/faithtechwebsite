@@ -7,6 +7,7 @@
 
             <% loop $getBlogEntryPages %>
                 <div class="col-md-3" style="height: 253px;">
+                    <% if $Active %>
                     <a href="{$Link}">
                         <div class="info-box info-box7">
                             <img src="{$Thumbnail.URL}" class="img-responsive" alt="Image">
@@ -17,6 +18,16 @@
                             </div>
                         </div>
                     </a>
+                    <% else %>
+                        <div class="info-box info-box7">
+                            <img src="{$Thumbnail.URL}" class="img-responsive" alt="Image">
+
+                            <div class="info">
+                                <h2 class="hd">$Title</h2>
+
+                            </div>
+                        </div>
+                    <% end_if %>
                 </div>
             <% end_loop %>
         </div>

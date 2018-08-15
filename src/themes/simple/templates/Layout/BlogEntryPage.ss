@@ -13,8 +13,8 @@
             <% end_if %>
             <div class="content better-text align-j">
                 $Content
-                <div class="info-box6">
-                    <h4>Share: </h4>
+                <div class="info-box9">
+                    <h4>Share This Post: </h4>
                     <div class="img social">
                         <a href="https://www.facebook.com/sharer.php?u=$AbsoluteLink" target="_blank">
                             <i class="fa fa-facebook-official"></i>
