@@ -74,6 +74,11 @@ ol li {
 	color: #494c52;
 }
 
+.g-recaptcha {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .btn-default.disabled, .btn-default[disabled], .btn-default {
 	border-color: #fc4513;
 	color: #fc4513;

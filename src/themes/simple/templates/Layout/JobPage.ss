@@ -15,6 +15,17 @@
                     <hr class="mr-b-10">
                     <h4 class="hd-4">Deadline To Apply</h4>
                     <p>$Date.Long</p>
+                    <hr class="mr-b-10">
+                    <h4 class="hd-4">Application</h4>
+                    <p>
+                        Please submit Cover Letter and Resume to
+                        <% if $Contact %>
+                            <a href="mailto:{$Contact}?subject={$Title}%20-%20{$Company}">$Contact</a>
+                        <% else %>
+                            <a href="mailto:jobs@faithtech.com?subject={$Title}%20-%20{$Company}">jobs@faithtech.com</a>
+                        <% end_if %>
+                        with <b>$Title - $Company</b> in the subject line
+                    </p>
                 </div>
             </div>
         </div>

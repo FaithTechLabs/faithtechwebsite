@@ -6,12 +6,12 @@ class HomePage extends Page {
         //Top Content
         'TopTitle' => 'Varchar(100)',
         'TopDescription' => 'HTMLText',
-        'TopEventTitle' => 'Varchar(100)',
-        'TopEventDescription' => 'Text',
         'TopLabTitle' => 'Varchar(100)',
         'TopLabDescription' => 'Text',
         'TopWorkTitle' => 'Varchar(100)',
         'TopWorkDescription' => 'Text',
+        'TopInstituteTitle' => 'Varchar(100)',
+        'TopInstituteDescription' => 'Text',
 
         //Block1 Content
         'Block1Title' => 'Varchar(100)',
@@ -20,20 +20,23 @@ class HomePage extends Page {
         //Block2 Content
         'Block2TopTitle' => 'Varchar(100)',
         'Block2TopContent' => 'HTMLText',
+        'Block2MiddleTitle' => 'Varchar(100)',
+        'Block2MiddleContent' => 'HTMLText',
         'Block2BottomTitle' => 'Varchar(100)',
         'Block2BottomContent' => 'HTMLText',
 
-        //block3 qoute
+        //block3 quote
         'Block3Title' => 'Varchar(100)',
     );
 
     static $has_one = array(
         'Block2TopImage' => 'Image',
+        'Block2MiddleImage' => 'Image',
         'Block2BottomImage' => 'Image',
         'TopBackground' => 'Image',
-        'EventsLinkedPage' => 'SiteTree',
         'LabsLinkedPage' => 'SiteTree',
         'WorkLinkedPage' => 'SiteTree',
+        'InstituteLinkedPage' => 'SiteTree',
     );
 
     function getCMSFields() {
@@ -52,19 +55,19 @@ class HomePage extends Page {
             new UploadField('TopBackground', 'Background (1920x900)'),
 
             new HeaderField('Labs'),
-            new TextField('TopEventTitle', 'Title'),
-            TreeDropdownField::create('EventsLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
-            new TextareaField('TopEventDescription', 'Description'),
-
-            new HeaderField('Work'),
             new TextField('TopLabTitle', 'Title'),
             TreeDropdownField::create('LabsLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
             new TextareaField('TopLabDescription', 'Description'),
 
-            new HeaderField('Institute'),
+            new HeaderField('Work'),
             new TextField('TopWorkTitle', 'Title'),
             TreeDropdownField::create('WorkLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
-            new TextareaField('TopWorkDescription', 'Description')
+            new TextareaField('TopWorkDescription', 'Description'),
+
+            new HeaderField('Institute'),
+            new TextField('TopInstituteTitle', 'Title'),
+            TreeDropdownField::create('InstituteLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
+            new TextareaField('TopInstituteDescription', 'Description')
         ));
         /*End Top*/
 
@@ -81,6 +84,11 @@ class HomePage extends Page {
             new UploadField('Block2TopImage', 'Image (1000x800)'),
             new TextField('Block2TopTitle', 'Title'),
             HtmlEditorField::create('Block2TopContent', 'Description')->setRows(10),
+
+            new HeaderField('Middle'),
+            new UploadField('Block2MiddleImage', 'Image (1000x800)'),
+            new TextField('Block2MiddleTitle', 'Title'),
+            HtmlEditorField::create('Block2MiddleContent', 'Description')->setRows(10),
 
             new HeaderField('Bottom'),
             new UploadField('Block2BottomImage', 'Image (1000x800)'),

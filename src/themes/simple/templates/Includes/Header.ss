@@ -27,7 +27,6 @@
                         <li><a href="$Link">$MenuTitle</a></li>
                     <% end_if %>
                 <% end_loop %>
-                <li><a href="$AbsoluteLink#contact">Contact</a></li>
                 <li><span><a href="$AbsoluteLink#movement" class="btn btn-light btn-sm">Join the Movement</a></span></li>
             </ul>
 
@@ -59,25 +58,9 @@
                     <!-- flex-column -->
                     <div class="flex-col-md-4">
                         <!-- info-box -->
-                        <a href="$EventsLinkedPage.Link">
-                        <div class="info-box info-box7">
-                            <div class="img"><i class="icon-beaker"></i></div>
-                            <div class="info">
-                                <h2 class="hd">$TopEventTitle</h2>
-                                <p class="sub-txt">$TopEventDescription</p>
-                            </div>
-                        </div>
-                        </a>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.flex-column -->
-
-                    <!-- flex-column -->
-                    <div class="flex-col-md-4">
-                        <!-- info-box -->
                         <a href="$LabsLinkedPage.Link">
                         <div class="info-box info-box7">
-                            <div class="img"><i class="icon-briefcase"></i></div>
+                            <div class="img"><i class="icon-beaker"></i></div>
                             <div class="info">
                                 <h2 class="hd">$TopLabTitle</h2>
                                 <p class="sub-txt">$TopLabDescription</p>
@@ -93,11 +76,27 @@
                         <!-- info-box -->
                         <a href="$WorkLinkedPage.Link">
                         <div class="info-box info-box7">
-                            <div class="img"><i class="icon-lightbulb"></i></div>
+                            <div class="img"><i class="icon-briefcase"></i></div>
                             <div class="info">
                                 <h2 class="hd">$TopWorkTitle</h2>
-
                                 <p class="sub-txt">$TopWorkDescription</p>
+                            </div>
+                        </div>
+                        </a>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.flex-column -->
+
+                    <!-- flex-column -->
+                    <div class="flex-col-md-4">
+                        <!-- info-box -->
+                        <a href="$InstituteLinkedPage.Link">
+                        <div class="info-box info-box7">
+                            <div class="img"><i class="icon-lightbulb"></i></div>
+                            <div class="info">
+                                <h2 class="hd">$TopInstituteTitle</h2>
+
+                                <p class="sub-txt">$TopInstituteDescription</p>
                             </div>
                         </div>
                         </a>
