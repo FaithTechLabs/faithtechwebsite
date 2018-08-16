@@ -2,6 +2,9 @@
 /*===========================================*/
 /*	DESKTOP LAYOUT
 /*===========================================*/
+.align-j {
+	text-align: justify;
+}
 
 .orange, .intro-text p.orange {
 	color: #fc4513!important;
@@ -36,6 +39,10 @@
 
 ol li {
 	margin-left: 1em;
+}
+
+.main-text ul li {
+	margin-left: 1.25em;
 }
 
 .btn-orange {
@@ -79,6 +86,9 @@ ol li {
 
 .info-box5 .img {
 	color: #ffffff;
+}
+.img.social a {
+	color: #000000;
 }
 .info-box5 .info .hd {
 	margin-top: 10px;
@@ -148,15 +158,26 @@ blockquote p span{
     cursor: pointer;
 }
 
+.blog-thumbs {
+	object-fit: cover;
+	width: 100%;
+}
 
 
 
 
 @media (min-width: 1200px) {
 
+	.blog-thumbs {
+		height: 200px;
+	}
+
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+	.blog-thumbs {
+		height: 160px;
+	}
 
 }
 

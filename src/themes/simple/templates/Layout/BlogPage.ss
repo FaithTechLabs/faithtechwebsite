@@ -1,11 +1,13 @@
 <section class="content-section align-c content-section-9">
     <div class="container">
         <h2 class="title">$ListSubPageTitle</h2>
+        $Description
         <hr class="mr-b-40">
         <div class="row eqh gt40 fs-equalize-element">
 
             <% loop $getBlogEntryPages %>
                 <div class="col-md-3" style="height: 253px;">
+                    <% if $Active %>
                     <a href="{$Link}">
                         <div class="info-box info-box7">
                             <img src="{$Thumbnail.URL}" class="img-responsive" alt="Image">
@@ -13,10 +15,19 @@
                             <div class="info">
                                 <h2 class="hd">$Title</h2>
 
-                                <p class="sub-txt">$SubTitle</p>
                             </div>
                         </div>
                     </a>
+                    <% else %>
+                        <div class="info-box info-box7">
+                            <img src="{$Thumbnail.URL}" class="img-responsive" alt="Image">
+
+                            <div class="info">
+                                <h2 class="hd">$Title</h2>
+
+                            </div>
+                        </div>
+                    <% end_if %>
                 </div>
             <% end_loop %>
         </div>

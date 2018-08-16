@@ -51,17 +51,17 @@ class HomePage extends Page {
             HtmlEditorField::create('TopDescription', 'Description')->setRows(8),
             new UploadField('TopBackground', 'Background (1920x900)'),
 
-            new HeaderField('Events'),
+            new HeaderField('Labs'),
             new TextField('TopEventTitle', 'Title'),
             TreeDropdownField::create('EventsLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
             new TextareaField('TopEventDescription', 'Description'),
 
-            new HeaderField('Labs'),
+            new HeaderField('Work'),
             new TextField('TopLabTitle', 'Title'),
             TreeDropdownField::create('LabsLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
             new TextareaField('TopLabDescription', 'Description'),
 
-            new HeaderField('Work'),
+            new HeaderField('Institute'),
             new TextField('TopWorkTitle', 'Title'),
             TreeDropdownField::create('WorkLinkedPageID', 'Link to page', 'SiteTree', 'ID', 'MenuTitle'),
             new TextareaField('TopWorkDescription', 'Description')
