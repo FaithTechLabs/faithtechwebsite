@@ -13,6 +13,10 @@
             </div>
         </div>
     </div>
+
+    <div>
+        <%--$getEventbriteEvents()--%>
+    </div>
     <!-- /container -->
 </section><!-- /content-section -->
 
