@@ -1,4 +1,4 @@
-<section class="content-section align-c content-section-9" id="upcoming">
+<section class="content-section align-c content-section-9" id="{$URLSegment}">
     <div class="container z1">
         <h2 class="title $SubTitleColor">$Title</h2>
         <div class="container filter-widget filter-style1 filterwidget1" id="filterwidget1" style="opacity: 1;">
@@ -35,7 +35,7 @@
 </section>
 
 <!-- content-section -->
-<section class="content-section content-section-common $topClass" id="{$URLSegment}">
+<section class="content-section content-section-common $topClass">
     <div class="container about-content">
         <div class="flex-col-md-8 flex-col-md-offset-2">
             <% if $Description %>
