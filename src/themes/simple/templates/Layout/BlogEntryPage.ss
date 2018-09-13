@@ -29,8 +29,8 @@
                 <hr class="mr-t-10 mr-b-30 bdr-dark1">
                 <h3 class="hd-3">Keep Reading</h3>
                 <div class="gt40">
-                    <div class="col-md-5" style="height: 253px;">
-                        <% if $PrevNextPage('prev') %>
+                    <% if $PrevNextPage('prev') && $PrevNextPage('prev').Active %>
+                        <div class="col-md-5">
                             <a href="$PrevNextPage('prev').Link">
                                 <div class="info-box info-box7">
                                     <img src="$PrevNextPage('prev').Thumbnail.URL" class="img-responsive blog-thumbs" alt="Image">
@@ -42,12 +42,10 @@
                                     </div>
                                 </div>
                             </a>
-                        <% else %>
-
-                        <% end_if %>
-                    </div>
-                    <div class="col-md-5">
-                        <% if $PrevNextPage('next') %>
+                        </div>
+                    <% end_if %>
+                    <% if $PrevNextPage('next') && $PrevNextPage('next').Active %>
+                        <div class="col-md-5">
                             <a href="$PrevNextPage('next').Link">
                                 <div class="info-box info-box7">
                                     <img src="$PrevNextPage('next').Thumbnail.URL" class="img-responsive blog-thumbs" alt="Image">
@@ -59,10 +57,8 @@
                                     </div>
                                 </div>
                             </a>
-                        <% else %>
-
-                        <% end_if %>
-                    </div>
+                        </div>
+                    <% end_if %>
                 </div>
             <% end_if %>
             <div class="col-md-12">

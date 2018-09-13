@@ -34,14 +34,35 @@
 
 <section class="content-section content-section-11">
 
-    <!-- <div class="full-wh bg-section bg-cover w-50" data-bg="images/bg-img6.jpg"></div> -->
+    <!-- <div class="full-wh bg-section bg-cover w-50" data-bg="images/bg.jpg"></div> -->
 
     <div class="container-fluid">
 
         <div class="row eqh fs-equalize-element">
-            <div class="col-md-6 l bg-cover bg-cc" data-bg="{$Block2BottomImage.URL}" style="background-image: url(&quot;{$Block2BottomImage.URL}&quot;); height: 651px;"></div>
+            <div class="col-md-6 l bg-cover bg-cc" data-bg="{$Block2MiddleImage.URL}" style="background-image: url(&quot;{$Block2BottomImage.URL}&quot;); height: 651px;"></div>
 
             <div class="col-md-6 r" style="height: 651px;">
+                <div class="content">
+                    <h2 class="title">$Block2MiddleTitle</h2>
+                    <div class="title-sub mr-b-40">$Block2MiddleContent</div>
+                </div><!-- /.content -->
+            </div><!-- /.col-lg-5 -->
+
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+</section><!-- /.content-section -->
+
+<section class="content-section content-section-11">
+
+    <!-- <div class="full-wh bg-section bg-cover w-50" data-bg="images/bg.jpg"></div> -->
+
+    <div class="container-fluid">
+
+        <div class="row eqh fs-equalize-element">
+            <div class="col-md-6 l col-md-push-6 bg-cover bg-cc" data-bg="{$Block2BottomImage.URL}" style="background-image: url(&quot;{$Block2BottomImage.URL}&quot;); height: 651px;"></div>
+
+            <div class="col-md-6 col-md-pull-6 r" style="height: 651px;">
                 <div class="content">
                     <h2 class="title">$Block2BottomTitle</h2>
                     <div class="title-sub mr-b-40">$Block2BottomContent</div>
@@ -51,7 +72,9 @@
         </div><!-- /.row -->
 
     </div><!-- /.container -->
-</section><!-- /.content-section --><!-- Testimonials -->
+</section><!-- /.content-section -->
+
+<!-- Testimonials -->
 
 <section class="testimonial-section dark testimonial-section-3">
     <div class="container-fluid">

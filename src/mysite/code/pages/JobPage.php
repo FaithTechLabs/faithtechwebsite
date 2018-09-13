@@ -10,6 +10,7 @@ class JobPage extends Page
         'Company' => 'Varchar',
         'Location' => 'Text',
         'Requirements' => 'HTMLText',
+        'Contact' => 'Varchar'
     );
 
     public function getCMSFields()
@@ -18,16 +19,20 @@ class JobPage extends Page
         $fields->replaceField('Title', TextField::create('Title', 'Job Title'));
         $fields->removeByName('Content');
         $fields->removeByName('Banner');
-        $fields->addFieldToTab('Root.Main', TextField::create('Company', 'Company Name')->setMaxLength(50), 'Description');
-        $fields->addFieldToTab('Root.Main', TextField::create('Location', 'Job Location')->setMaxLength(50), 'Description');
-        $fields->addFieldToTab('Root.Main', DateField::create('Date', 'Deadline')->setConfig('showcalendar',true), 'Description');
-        $fields->addFieldToTab('Root.Main', TextareaField::create('Teaser', 'Quick Summary of the Job'), 'Description');
-        $fields->addFieldToTab('Root.Main', HTMLEditorField::create('Requirements', 'Job Requirements')->setRows(10), 'Description');
+        $fields->addFieldsToTab('Root.Main', array(
+            TextField::create('Company', 'Company Name')->setMaxLength(50),
+            TextField::create('Location', 'Job Location')->setMaxLength(50),
+            DateField::create('Date', 'Deadline')->setConfig('showcalendar', true),
+            TextareaField::create('Teaser', 'Quick Summary of the Job'),
+            HTMLEditorField::create('Requirements', 'Job Requirements')->setRows(10),
+            TextField::create('Contact', 'Email address where applications can be sent')), 'Description');
+
 
         return $fields;
     }
 }
 
-class JobPage_Controller extends Page_Controller{
+class JobPage_Controller extends Page_Controller
+{
 
 }
