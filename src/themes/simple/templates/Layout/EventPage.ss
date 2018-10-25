@@ -57,12 +57,12 @@
 <% if $getEventGalleryPages %>
     <section class="content-section align-c content-section-9">
         <div class="container">
-            <h2 class="title">Faithtech Event Gallery</h2>
+            <h2 class="title">FaithTech Event Gallery</h2>
             <hr class="mr-b-40">
             <div class="row eqh gt40 fs-equalize-element">
                 <% loop $getEventGalleryPages %>
                     <div class="col-md-3 col-sm-6" style="height: 253px;">
-                        <a href="{$Link}">
+                        <a href="$ExternalLink">
                             <div class="info-box info-box7">
                                 <img src="{$Thumbnail.CroppedImage(510,320).URL}" class="img-responsive" alt="Image">
 
