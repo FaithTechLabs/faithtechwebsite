@@ -1,7 +1,9 @@
 <?php
 
 class EventGalleryPage extends Page{
-    static $db = array();
+    static $db = array(
+        'ExternalLink' => 'Text'
+    );
     static $has_one = array(
         'Thumbnail' => 'Image'
     );
@@ -11,6 +13,8 @@ class EventGalleryPage extends Page{
 
     public function getCMSFields(){
         $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab('Root.Main', TextField::create('ExternalLink', 'Sponsor Link'));
 
         $fields->addFieldsToTab('Root.Thumbnail', array(
             UploadField::create('Thumbnail', 'Thumbnail (255x160)')

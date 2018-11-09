@@ -2,11 +2,14 @@
     <div class="container">
         <h2 class="hd-2">$Title</h2>
         <h3 class="hd-3">$Company</h3>
-        <h4 class="hd-4">$Location</h4>
+        <h4 class="hd-4">$LocationName($Location)</h4>
         <hr class="mr-b-40">
         <div class="row eqh gt40 fs-equalize-element">
             <div class="flex-col-md-8 flex-col-md-offset-2 align-j">
                 <div class="content main-text">
+                    <h4 class="hd-4">Kingdom Impact</h4>
+                    <p>$Impact</p>
+                    <hr class="mr-b-10">
                     <h4 class="hd-4">Required Skills</h4>
                     $Requirements
                     <hr class="mr-b-10">
