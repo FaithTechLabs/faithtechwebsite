@@ -18,4 +18,4 @@ jobs:
             echo "'_$(git status -uno --porcelain | wc -l)_'"
             git status -uno --porcelain
             echo "Pushing to dev.faithtech.com"
-            git ftp push -D --user $FTPUSER --passwd $FTPPASS $FTPHOST/dev.faithtech.com -v --syncroot src
+            git ftp push --user $FTPUSER --passwd $FTPPASS $FTPHOST/dev.faithtech.com -v --syncroot src
