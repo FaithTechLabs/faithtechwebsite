@@ -13,8 +13,8 @@ jobs:
           name: Upload site to dev.faithtech.com
           command: |
             cd src
-            apt-get update
-            apt-get -qq install git-ftp
+            sudo apt-get update
+            sudo apt-get -qq install git-ftp
             echo "'_$(git status -uno --porcelain | wc -l)_'"
             git status -uno --porcelain
             echo "Pushing to dev.faithtech.com"
