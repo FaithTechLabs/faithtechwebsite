@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: samueldebruyn/debian-git
+      - image: circleci/python:3.6.7
 
-    working_directory: ~/src
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Python Test
+          command: .circleci/test-devsite.py
       - run:
           name: Look at files
+          command: cd src
           command: ls
