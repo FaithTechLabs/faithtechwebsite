@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Python Test
-          command: .circleci/test-devsite.py
+          command: python .circleci/test-devsite.py
       - run:
           name: Look at files
           command: |
