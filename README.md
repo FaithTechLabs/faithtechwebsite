@@ -10,5 +10,6 @@
 * Config for deployment is in .circleci directory
 * Deploy to prod is still manual
 
-* Next steps - modify job to push to prod on merge to master
+## Next steps 
+* Modify job to push to prod on merge to master
 * Create smoke tests to verify test and not push to prod unless those pass
