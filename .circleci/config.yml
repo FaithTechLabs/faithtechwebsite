@@ -9,8 +9,13 @@ jobs:
       - run:
           name: Python Test
           command: python .circleci/test-devsite.py
-      - run:
-          name: Look at files
+      - deploy:
+          name: Upload site to dev.faithtech.com
           command: |
             cd src
-            ls
+            apt-get update
+            apt-get -qq install git-ftp
+            echo "'_$(git status -uno --porcelain | wc -l)_'"
+            git status -uno --porcelain
+            echo "Pushing to dev.faithtech.com"
+            git ftp push -D --user $FTPUSER --passwd $FTPPASS/dev.faithtech.com
