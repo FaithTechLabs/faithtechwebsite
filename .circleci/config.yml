@@ -11,5 +11,6 @@ jobs:
           command: .circleci/test-devsite.py
       - run:
           name: Look at files
-          command: cd src
-          command: ls
+          command: |
+            cd src
+            ls
