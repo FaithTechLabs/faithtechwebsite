@@ -39,7 +39,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body class="lw-2">
 <div id="page">
     <% include Header %>
     $Layout
