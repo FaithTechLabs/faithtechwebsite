@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.7
+
+    steps:
+      - checkout
+      - run:
+          name: Python Test
+          command: python .circleci/test-devsite.py
+      - deploy:
+          name: Upload site to dev.faithtech.com
+          command: |
+            cd src
+            sudo apt-get update
+            sudo apt-get -qq install git-ftp
+            echo "'_$(git status -uno --porcelain | wc -l)_'"
+            git status -uno --porcelain
+            echo "Pushing to dev.faithtech.com"
+            git ftp push --user $FTPUSER --passwd $FTPPASS $FTPHOST/dev.faithtech.com -v --syncroot src
